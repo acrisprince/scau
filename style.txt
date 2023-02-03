@@ -133,15 +133,14 @@ header .fa-bars{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1200) no-repeat;
+    background: url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .content{
     text-align: center;
-    padding:35rem;
-    
+    padding:1rem;
 }
 
 .home .content h1{
@@ -307,7 +306,35 @@ header .fa-bars{
     object-fit: cover;
 }
 
+.project .box-container .box .icons{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:100%; left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background:linear-gradient(transparent, rgba(0,0,0,.7));
+    transform: scale(0);
+}
 
+.project .box-container .box:hover .icons{
+    top:0;
+    transform: scale(1);
+}
+
+.project .box-container .box .icons a{
+    font-size: 3rem;
+    color:#fff;
+    margin:3rem 0;
+    text-shadow: 0 .3rem .5rem #000;
+    transform: translateY(13rem);
+    transition-delay: calc(.2s * var(--i));
+}
+
+.project .box-container .box:hover .icons a{
+    transform: translateY(0rem);
+}
 
 .donate{
     position: relative;
@@ -339,18 +366,6 @@ header .fa-bars{
     text-align: center;
     border-top: .1rem solid rgba(255,255,255,.3);
     border-left: .1rem solid rgba(255,255,255,.3);
-}
-.alert{
-    width: 100%;
-    background-color: rgb(0, 255, 106);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    display: none;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .donate .form-container form .inputBox{
@@ -398,12 +413,6 @@ header .fa-bars{
 .post{
     min-height: 100vh;
 }
-#more {display: none;}
-#mor {display: none;}
-#mo {display: none;}
-#morre {display: none;}
-#mores {display: none;}
-#morres {display: none;}
 
 .post .box-container{
     display: flex;
@@ -411,7 +420,6 @@ header .fa-bars{
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
-    background: ghostwhite;
 }
 
 .post .box-container .box{
@@ -421,11 +429,6 @@ header .fa-bars{
 }
 
 .post .box-container .box img{
-    height: 23rem;
-    width: 100%;
-    object-fit: cover;
-}
-.post .box-container .box video{
     height: 23rem;
     width: 100%;
     object-fit: cover;
@@ -459,39 +462,6 @@ header .fa-bars{
     color:#666;
     font-size: 1.5rem;
 }
-
-
-.executives{
-    min-height: 100vh;
-}
-
-.executives .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    background: steelblue;
-    
-}
-
-.executives .box-container .box{
-    width: 35rem;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-    margin:2rem 1.5rem;
-}
-
-.executives .box-container .box img{
-    height: 40rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.executives .box-container .box .content h3{
-    font-size: 2.4rem;
-    color:#333;
-}
-
 
 .footer{
     background:#333;
